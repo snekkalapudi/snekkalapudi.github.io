@@ -64,7 +64,7 @@
             animation-delay: 0s;`);
         divElem.classList.add("ball");
         divElem.addEventListener('click', pop);
-        divElem.addEventListener('touchstart', pop, {passive: true});
+        divElem.addEventListener('touchstart', pop, {passive: false});
         divElem.addEventListener("animationend", removeBubble);
         bubbleContainer.appendChild(divElem);
     }
@@ -83,7 +83,7 @@
         document.getElementById('bubbleContainer').addEventListener("touchmove", function (event) {
             event.preventDefault();
             event.stopPropagation();
-        }, {passive: true});
+        }, {passive: false});
     }
 
     function updateSpeed(speed) {
