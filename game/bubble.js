@@ -144,7 +144,7 @@ function listenToScreenSizeChagnes() {
     // Listen for orientation changes
     window.addEventListener("orientationchange", function() {
         // Announce the new orientation number
-        console.log(screen.orientation);
+        alert(screen.orientation);
         updateHeight();
     }, false);
 }
