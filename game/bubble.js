@@ -62,7 +62,12 @@ function addBubble(bubbleContainer, bubble) {
     bubbleContainer.appendChild(divElem);
 }
 
-function updateHeight(speed) {
+function updateHeight() {
+    document.body.addEventListener("touchmove", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }, false);
+
     let root = document.documentElement,
         bubbleScreenHeight = height - 50;
     root.style.setProperty('--drop-animation-height', `${bubbleScreenHeight}px`);
@@ -72,7 +77,7 @@ function updateHeight(speed) {
 function updateSpeed(speed) {
     console.log(speed, currentSpeed);
     currentSpeed = defaultSpeed / Number(speed);
-    var bubblesInFlight = document.querySelectorAll('.ball');
+    let bubblesInFlight = document.querySelectorAll('.ball');
 
     bubblesInFlight.forEach( input => input.style.setProperty('--drop-animation-duration', `${currentSpeed}s`));
 }
