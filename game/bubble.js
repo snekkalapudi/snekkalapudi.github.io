@@ -64,7 +64,7 @@
             animation-delay: 0s;`);
         divElem.classList.add("ball");
         divElem.addEventListener('click', pop);
-        divElem.addEventListener('touchstart', pop, {passive: false});
+        divElem.addEventListener('touchstart', pop);
         divElem.addEventListener("animationend", removeBubble);
         bubbleContainer.appendChild(divElem);
     }
