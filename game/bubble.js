@@ -142,11 +142,15 @@ function listenToScreenSizeChagnes() {
     }, false);
 
     // Listen for orientation changes
-    window.addEventListener("orientationchange", function() {
-        // Announce the new orientation number
+    window.onorientationchange = function() {
         alert(screen.orientation);
         updateHeight();
-    }, false);
+    };
+    // window.addEventListener("orientationchange", function() {
+    //     // Announce the new orientation number
+    //     alert(screen.orientation);
+    //     updateHeight();
+    // }, false);
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
