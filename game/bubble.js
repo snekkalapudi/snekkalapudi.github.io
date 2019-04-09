@@ -57,13 +57,13 @@ function addBubble(bubbleContainer, bubble) {
             --drop-animation-duration: ${currentSpeed}s;
             animation-delay: 0s;`);
     divElem.addEventListener('click', pop);
-   // divElem.addEventListener('ontouchstart', pop);
+    divElem.addEventListener('touchstart', pop);
     divElem.addEventListener("animationend", removeBubble);
     bubbleContainer.appendChild(divElem);
 }
 
 function updateHeight() {
-    document.body.addEventListener("touchmove", function(event) {
+    document.getElementById('bubbleContainer').addEventListener("touchmove", function(event) {
         event.preventDefault();
         event.stopPropagation();
     }, false);
