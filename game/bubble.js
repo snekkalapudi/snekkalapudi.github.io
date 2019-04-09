@@ -66,6 +66,7 @@ function updateHeight() {
     let gameControls = document.getElementById('gameControls');
 
     height = document.documentElement.clientHeight - gameControls.clientHeight;
+    width = document.documentElement.clientWidth;
     let root = document.documentElement,
         bubbleScreenHeight = height - 50;
     root.style.setProperty('--drop-animation-height', `${bubbleScreenHeight}px`);
@@ -114,6 +115,7 @@ function updateScore(_score) {
 }
 
 function pop(event) {
+    event.preventDefault();
     let elem = event.target,
         elemWidth = elem.clientWidth,
         newScore = Math.floor(100 / Number(elemWidth));
@@ -135,22 +137,10 @@ function getRandomInt(min, max) {
 
 function listenToScreenSizeChagnes() {
     // Listen for resize changes
-    window.addEventListener("resize", function() {
-        // Get screen size (inner/outerWidth, inner/outerHeight)
-        console.log('resize invoked');
-        updateHeight();
-    }, false);
+    window.onresize = () => updateHeight();
 
     // Listen for orientation changes
-    window.onorientationchange = function() {
-        alert(screen.orientation);
-        updateHeight();
-    };
-    // window.addEventListener("orientationchange", function() {
-    //     // Announce the new orientation number
-    //     alert(screen.orientation);
-    //     updateHeight();
-    // }, false);
+    window.onorientationchange = () => updateHeight();
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
