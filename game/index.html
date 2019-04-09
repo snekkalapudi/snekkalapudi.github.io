@@ -10,9 +10,9 @@
 <body>
     <div class="container">
         <div id="gameControls" class="gameControls">
-            <h2 aria-live="polite" id="score">0</h2>
+            <div class="score" aria-live="polite" id="score">0</div>
             <input id="myRange" type="range" name="points" min="1" max="10">
-            <label for="myRange">Speed</label>
+            <label class="speedLabel" aria-label="speed slider" for="myRange">Speed</label>
             <span id="demo"></span>
         </div>
         <div id="bubbleContainer" class="bubbleContainer">
