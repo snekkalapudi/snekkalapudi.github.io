@@ -3,6 +3,7 @@ let width = 800, height = 1000; // Make this dynamic based on screen by reading 
 let bubblesQueue = [],
     bubbleCount = 10,
     defaultSpeed = 6,
+    currentSpeed = defaultSpeed,
     score = 0;
 
 function addInitialBubbles() {
@@ -53,8 +54,10 @@ function addBubble(bubbleContainer, bubble) {
             background-image: linear-gradient(${bubble.color}, ${bubble.color1});
             left: ${bubble.left}px;
             position: absolute;
+            --drop-animation-duration: ${currentSpeed}s;
             animation-delay: 0s;`);
     divElem.addEventListener('click', pop);
+    divElem.addEventListener('ontouchstart', pop);
     divElem.addEventListener("animationend", removeBubble);
     bubbleContainer.appendChild(divElem);
 }
@@ -67,11 +70,11 @@ function updateHeight(speed) {
 
 
 function updateSpeed(speed) {
-    console.log(speed, defaultSpeed);
-    let finalSpeed = defaultSpeed / Number(speed);
+    console.log(speed, currentSpeed);
+    currentSpeed = defaultSpeed / Number(speed);
     var bubblesInFlight = document.querySelectorAll('.ball');
 
-    bubblesInFlight.forEach( input => input.style.setProperty('--drop-animation-duration', `${finalSpeed}s`));
+    bubblesInFlight.forEach( input => input.style.setProperty('--drop-animation-duration', `${currentSpeed}s`));
 }
 
 function addNewBubble() {
