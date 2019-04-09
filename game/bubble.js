@@ -63,16 +63,20 @@ function addBubble(bubbleContainer, bubble) {
 }
 
 function updateHeight() {
-    document.getElementById('bubbleContainer').addEventListener("touchmove", function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-    }, false);
+    let gameControls = document.getElementById('gameControls');
 
+    height = document.documentElement.clientHeight - gameControls.clientHeight;
     let root = document.documentElement,
         bubbleScreenHeight = height - 50;
     root.style.setProperty('--drop-animation-height', `${bubbleScreenHeight}px`);
 }
 
+function disableTouchMove() {
+    document.getElementById('bubbleContainer').addEventListener("touchmove", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }, false);
+}
 
 function updateSpeed(speed) {
     console.log(speed, currentSpeed);
@@ -129,6 +133,22 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
+function listenToScreenSizeChagnes() {
+    // Listen for resize changes
+    window.addEventListener("resize", function() {
+        // Get screen size (inner/outerWidth, inner/outerHeight)
+        console.log('resize invoked');
+        updateHeight();
+    }, false);
+
+    // Listen for orientation changes
+    window.addEventListener("orientationchange", function() {
+        // Announce the new orientation number
+        console.log(screen.orientation);
+        updateHeight();
+    }, false);
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     let gameControls = document.getElementById('gameControls');
 
@@ -139,6 +159,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     //the event occurred
     addInitialBubbles();
     updateHeight();
+    disableTouchMove();
     setupSliderEvents();
     addBubblesFromQueue(bubblesQueue);
+    listenToScreenSizeChagnes();
 });
