@@ -83,7 +83,7 @@
         document.getElementById('bubbleContainer').addEventListener("touchmove", function (event) {
             event.preventDefault();
             event.stopPropagation();
-        }, {passive: false});
+        }, false);
     }
 
     function updateSpeed(speed) {
