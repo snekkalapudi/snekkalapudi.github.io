@@ -1,0 +1,8 @@
+title: Snekkalapudi.GitHub.io
+description: 
+google_analytics: UA-63340141-1
+show_downloads: true
+theme: jekyll-theme-slate
+
+gems:
+  - jekyll-mentions
