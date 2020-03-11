@@ -23,6 +23,12 @@ _Feedback.js is a Open Source project: https://github.com/niklasvh/feedback.js. 
 
 ***
 
+### Rating stars 
+_Simple and scalable rating stars._
+* [View Rating stars demo](http://snekkalapudi.github.io/rating-stars/ratingstar.html)
+
+***
+
 ### Presentation at WebPerfDays.org
 _How to Make Slower Sites Faster_
 * [Presented at Google Campus, Mountain View on 28 June 2012](http://www.webperfdays.org/events/2012-mountainview/schedule.html)
@@ -43,12 +49,6 @@ _Built during CodePath iOS Swift bootcamp_
 ### Controljsify
 _ControlJS is a JavaScript module for making scripts load faster by Steve Souders. Controljsify adds ControlJS support to any site and one can evaluate the performance of the site._
 * [Controljsify](http://snekkalapudi.github.io/controljsify/)
-
-***
-
-### Rating stars 
-_Simple and scalable rating stars._
-* [View Rating stars demo](http://snekkalapudi.github.io/rating-stars/ratingstar.html)
 
 ***
 
