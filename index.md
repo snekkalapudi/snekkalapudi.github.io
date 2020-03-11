@@ -1,6 +1,7 @@
 ### Vision AI
-[Scan US Passport](https://youtu.be/3B_rrLQrels)
+[Scan US Passport to sign up](https://youtu.be/3B_rrLQrels)
 
+***
 
 ### Followme.js
 _Lets people follow your presentation in Web / Tablets / Mobile and turns your mobile as a presentation remote_
@@ -12,12 +13,6 @@ _Lets people follow your presentation in Web / Tablets / Mobile and turns your m
 ### BrowserLab.js
 _With browserLab.js one can control every browser on desktops, laptops and devices without having to repeat the same stuff over & over again. Can view how a responsive web page looks in all devices and browsers by just doing it on one machine._
 * [Demo](https://www.youtube.com/watch?v=BRLVBKLoBpw)
-
-***
-
-### Controljsify
-_ControlJS is a JavaScript module for making scripts load faster by Steve Souders. Controljsify adds ControlJS support to any site and one can evaluate the performance of the site._
-* [Controljsify](http://snekkalapudi.github.io/controljsify/)
 
 ***
 
@@ -42,6 +37,12 @@ _Built during CodePath iOS Swift bootcamp_
 * [Yelp](https://github.com/snekkalapudi/yelp-IOS)
 * [Rotten Tomatoes](https://github.com/snekkalapudi/RottenTomatoes)
 * [Tips Calculator](https://github.com/snekkalapudi/TipsCalculator)
+
+***
+
+### Controljsify
+_ControlJS is a JavaScript module for making scripts load faster by Steve Souders. Controljsify adds ControlJS support to any site and one can evaluate the performance of the site._
+* [Controljsify](http://snekkalapudi.github.io/controljsify/)
 
 ***
 
