@@ -1,4 +1,4 @@
-### VISION AI
+### Vision AI
 [Scan US Passport](https://youtu.be/3B_rrLQrels)
 
 
