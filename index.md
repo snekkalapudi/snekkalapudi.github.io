@@ -46,13 +46,6 @@ _ControlJS is a JavaScript module for making scripts load faster by Steve Souder
 
 ***
 
-### Sencha Touch Charts 
-_Visual representation of Line, Bar, Column, Radar and Pie Charts using same data set._
-* [Demo](http://snekkalapudi.github.io/touch-charts/)
-* _Please view in Safari. (This is done in Sencha Touch 1.x. Google Chrome 39 removed support for WebKitPoint, thus Sencha Touch 1.1.1  has few issues: https://www.sencha.com/forum/showthread.php?294965-Uncaught-ReferenceError-WebKitPoint-is-not-defined)_
-
-***
-
 ### Rating stars 
 _Simple and scalable rating stars._
 * [View Rating stars demo](http://snekkalapudi.github.io/rating-stars/ratingstar.html)
@@ -76,3 +69,4 @@ _Oppia is an online learning tool that enables anyone to easily create and share
 * [jquery.carousel](https://github.com/snekkalapudi/jquery.carousel.js)
 
 ***
+
