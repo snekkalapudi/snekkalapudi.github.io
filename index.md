@@ -42,22 +42,10 @@ _Built during CodePath iOS Swift bootcamp_
 
 ***
 
-### Controljsify
-_ControlJS is a JavaScript module for making scripts load faster by Steve Souders. Controljsify adds ControlJS support to any site and one can evaluate the performance of the site._
-* [Controljsify](http://snekkalapudi.github.io/controljsify/)
-
-***
 
 ### Music site on Google App Engine
 _Music site with Google Authentication, upload and play music_
 * [Repo](https://github.com/snekkalapudi/music-site-googleappengine)
-* [Demo](http://music-worlds.appspot.com/)
-
-***
-
-### Oppia private instance
-_Oppia is an online learning tool that enables anyone to easily create and share interactive activities. These activities, called 'explorations', simulate a one-on-one conversation with an intelligent tutor. More details here: https://code.google.com/p/oppia/_
-* [Just a sample tutorial using Oppia](https://oppia-demo.appspot.com/contribute)
 
 ***
 
